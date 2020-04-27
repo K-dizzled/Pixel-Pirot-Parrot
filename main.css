@@ -1,0 +1,51 @@
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.container {
+    margin-top: 0px;
+    
+}
+.game_t {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    background: rgb(43, 44, 51);
+}
+.game-con {
+    align-items: center;
+    justify-content: center;
+    
+}
+.logotip {
+  position: fixed;
+  top: 50;
+  left: 50;
+  display: block  ;
+}
